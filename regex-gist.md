@@ -40,17 +40,27 @@ Bracket expressions are what are used to help define character sets. They look l
 
 ### Character Classes
 
+Character classes include characters that can be found throughout our example code snippet above.
+
+A 'Literal Character' is any character that does not include ^,-, ], or \. the _ in [a-z0-9_\.-] matches an _ character should it be present in the string.
+
+A 'Backslash' escapes special characters to suppress their special meaning. in this bit of code [a-z0-9_\.-] the escaped character of . removes the meaning found outside of a bracket expression and allows it to be passed in with the string.
+
+A 'Range' is defined by using a hyphen between two tokens that each sepcificy a single character. These ranges can include the two tokens that are used as boundaries. [a-z0-9_\.-] a-z matches a character between a and z. the 0-9 range matches any character within that range.
+
+\d displayed ([\da-z\.-]+) matches any digit from 0-9.
+
 ### The OR Operator
 
 '+' , '*'. In this code snippet the OR operator '+' means it will match one or more of the bracketed character sets. ([a-z0-9_\.-]+
 
 ### Flags
 
-This code snippet does not include the use of any flags. Flags are tokens that can be used to alter the action of searches. They are completely optional. For instance, instead of stopping at the first match the g flag searches for all matches of a given expression inside of a string.
+In our example code snippet there are no use of any flags. Flags are tokens that can be used to alter the action of searches. They are completely optional. For instance, instead of stopping at the first match the g flag searches for all matches of a given expression inside of a string.
 
 ### Character Escapes
 
-
+In the example code snippet the \ functions to nullify any special association or meaning a character may have outside of the given representation. For example, the . character servers a different purpose outside of the nullification of the backslash. Also a caret ^ can be used to match the beginning of a string. However, when used with a backslash it nullifies any specific range or character.
 
 ## Author
 

@@ -42,11 +42,11 @@ Bracket expressions are what are used to help define character sets. They look l
 
 Character classes include characters that can be found throughout our example code snippet above.
 
-A 'Literal Character' is any character that does not include ^,-, ], or \. the _ in [a-z0-9_\.-] matches an _ character should it be present in the string.
+A 'Literal Character' is any character that does not have ^,-, ], or \. the _ in [a-z0-9_\.-] matches an _ character if it is included in the string.
 
-A 'Backslash' escapes special characters to suppress their special meaning. in this bit of code [a-z0-9_\.-] the escaped character of . removes the meaning found outside of a bracket expression and allows it to be passed in with the string.
+A 'Backslash' works around special characters to nullify their any unique connitation or special meaning. In this segment of code [a-z0-9_\.-] the escaped character of . nullifies the meaning located outside of a bracket expression and lets it to be passed in with the string.
 
-A 'Range' is defined by using a hyphen between two tokens that each sepcificy a single character. These ranges can include the two tokens that are used as boundaries. [a-z0-9_\.-] a-z matches a character between a and z. the 0-9 range matches any character within that range.
+A 'Range' is defined as using a hyphen between two tokens that each specificy a single character. These ranges can include the two tokens that are used as limits. [a-z0-9_\.-] a-z matches a character between a and z. Whereas the 0-9 range matches any character within that range.
 
 \d displayed ([\da-z\.-]+) matches any digit from 0-9.
 

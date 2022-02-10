@@ -42,17 +42,17 @@ Bracket expressions are what are used to help define character sets. They look l
 
 Character classes include characters that can be found throughout our example code snippet above.
 
-"Literal Character" are any characters that do not have ^,-, ], or \. the _ in [a-z0-9_\.-] matches a _ character if it is included in the string.
+"Range" is defined as using a hyphen between two tokens that each specificy a single character. These ranges can include the two tokens that are used as limits. [a-z0-9_\.-] a-z matches a character between a and z. Whereas the 0-9 range matches any character within that range.
 
 "Backslash" works around special characters to nullify their any unique connitation or special meaning. In this segment of code [a-z0-9_\.-] the escaped character of . nullifies the meaning located outside of a bracket expression and lets it to be passed in with the string.
 
-"Range" is defined as using a hyphen between two tokens that each specificy a single character. These ranges can include the two tokens that are used as limits. [a-z0-9_\.-] a-z matches a character between a and z. Whereas the 0-9 range matches any character within that range.
+"Literal Character" are any characters that do not have ^,-, ], or \. the _ in [a-z0-9_\.-] matches a _ character if it is included in the string.
 
-\d displayed ([\da-z\.-]+) matches any digit from 0-9.
+\d displayed ([\da-z\.-]+) matches any number from 0-9.
 
 ### The OR Operator
 
-'+' , '*'. In this code snippet the OR operator '+' means it will match one or more of the bracketed character sets. ([a-z0-9_\.-]+
+'+' , '*'. In this code snippet the OR operator '+' means it will match one or more of the bracketed sets of characters. ([a-z0-9_\.-]+
 
 ### Flags
 

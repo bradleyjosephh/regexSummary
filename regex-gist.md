@@ -1,4 +1,4 @@
-# Title regexSummary
+# regexSummary
 
 This document will provide a short summary of what Regex are, what they are used for, and how they function. Specifically I will be focusing on email validation.
 
